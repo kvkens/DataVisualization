@@ -45,6 +45,9 @@
 //				}
 //			});
 		},
+		loading : function(){
+			$(".content").html("<div class=\"spinner\"></div>");
+		},
 		initPage : function(){
 			var that = this,
 				flag = false,
@@ -72,6 +75,7 @@
 			
 		},
 		loadHtml : function(url){
+			this.loading();
 			$.get("page/"+url+".html",{r:new Date().getTime()},function(msg){
 				$(".content").unbind().empty().append(msg);
 			},"html");
