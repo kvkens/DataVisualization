@@ -1,0 +1,23 @@
+{
+  "name": "datavisual",
+  "version": "1.0.0",
+  "description": "html js css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvkens/eHaierDataVisualization.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Kvkens (yueming@ehaier.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kvkens/eHaierDataVisualization/issues"
+  },
+  "homepage": "https://github.com/kvkens/eHaierDataVisualization#readme"
+}
