@@ -10,14 +10,18 @@ $(function(){
 		if(!$li.hasClass("li-current")){
 			$li.siblings().removeClass("li-current") ;
 			$li.addClass("li-current");
+			indexTitle += title;
+			document.title = indexTitle;
+			$J_navtext.html("用户体验监控 &gt;"+title);
+			console.log(url);
+			history.pushState({title:indexTitle},indexTitle,url);
+			//history.replaceState({title:indexTitle},indexTitle,url);
+			$.get("./page/" + url,function(msg){
+				$(".content").html(msg);
+			},"html");
 		}
-		indexTitle += title;
-		document.title = indexTitle;
-		$J_navtext.html("用户体验监控 &gt;"+title);
-		console.log(url);
-		history.pushState({title:indexTitle},indexTitle,url);
-		//history.replaceState({title:indexTitle},indexTitle,url);
-		$.get("./page/" + url);
+		
 	});
+	
 	$(".content").css("height",$(document).height()-200);
 });

@@ -170,6 +170,8 @@ img {
 	border-bottom: 1px solid #d9dada;
 }
 .content{
-	background-color: #00438A;
+	background-color: #FFF;
 	height: 450px;
+	margin:0;
+	padding:0;
 }

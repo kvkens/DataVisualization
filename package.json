@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/kvkens/eHaierDataVisualization/issues"
   },
-  "homepage": "https://github.com/kvkens/eHaierDataVisualization#readme"
+  "homepage": "https://github.com/kvkens/eHaierDataVisualization#readme",
+  "dependencies": {
+    "http-server": "^0.8.0"
+  }
 }
