@@ -39,6 +39,7 @@ module.exports = function(grunt) {
 					'*.html',
 					'css/**/*.css',
 					'js/**/*.js',
+					'page/*.html'
 				]
 			}
 		
