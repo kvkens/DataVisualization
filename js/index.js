@@ -25,13 +25,13 @@
 		reloadPage : function(){
 			var action = this.page.getQueryString("action");
 			//有返回BUG
-			console.log("URL:"+action);
 			if(action!=null){
 				$(".J_menu > li").each(function(){
 						var url = $(this).find("a").attr("data-url");
 						if(action==url){
-							$(this).trigger("click");
-							//return false;
+							$(this).trigger("click",["call"]);
+
+							return false;
 						}
 				});
 			}
@@ -74,7 +74,7 @@
 		},
 		btns : function(){
 			var that = this;
-			$(".J_menu > li").on("click",function(){
+			$(".J_menu > li").on("click",function(e,_call){
 				var $this = $(this),
 					url = $this.find("a").attr("data-url"),
 					$li = $this;
@@ -83,7 +83,9 @@
 					$li.siblings().removeClass("li-current") ;
 					$li.addClass("li-current");
 					that.page.changTitle($li.text());
-					history.replaceState({title:document.title},document.title,"?action="+url);
+					if(_call!="call"){
+						history.pushState({title:document.title},document.title,"?action="+url);
+					}
 					that.loadHtml(url);
 				}
 			});
