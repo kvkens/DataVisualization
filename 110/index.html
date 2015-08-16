@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阿里110</title>
+	<style>
+	/* base yui reset.css, repair 20091217*/
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin:0;padding:0;border:0;word-wrap:break-word;word-break:break-all;}
+	table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
+	table {border-collapse:collapse;}
+	address, caption, cite, code, dfn, strong, th, var {font-style:normal;}
+	h1, h2, h3, h4, h5, h6 {font-size:1em;}
+	input, textarea, select {font-family:inherit;font-weight:inherit;font-size:1em;padding:0;outline:none;}
+	ul, ol {list-style:none;}
+	em {font-style:normal;}
+	/*html {background:#f2f2f2;}*/
+	body {font-size:0.75em;color:#606060;/*background:#f2f2f2;*/font-family:"微软雅黑", Verdana, Tahoma, Arial, Helvetica, "宋体", sans-serif;word-wrap:break-word;word-break:break-all;}
+	a {color:#606060;text-decoration:none;}
+	a:hover {color:#005aa9;}
+	a img, img {border-width:0px;}
+	.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+	.clearfix {*zoom:1;clear:both;}
+	/* reset end */
+		.top{
+			width:100%;
+			height: 95px;
+			background: url(./images/top_bg.jpg) repeat-x;
+			margin: 0 auto;
+		}
+		.top .wrap{
+			width : 990px;
+			height:95px;
+			margin:0 auto;
+		}
+		.top .logo{
+			width:165px;
+			height:95px;
+			line-height:95px;
+			background: url(//gtms01.alicdn.com/tps/i1/T1V3dIFzNeXXb4HKDg-165-50.png) no-repeat 0px 23px;
+    		background-image: -webkit-image-set(url(//gtms01.alicdn.com/tps/i1/T1V3dIFzNeXXb4HKDg-165-50.png) 1x,url(//gtms01.alicdn.com/tps/i1/T1qlFHFqldXXafBK7F-330-100.png) 2x);
+			background-repeat: no-repeat;
+			background-position: 0px 23px;
+			float:left;
+
+		}
+		.top .logo a{
+			width:165px;
+			height:95px;
+			line-height:95px;
+			display: block;
+		}
+		.top .slogan{
+			width:211px;
+			height:36px;
+			line-height:36px;
+			border-left: 1px solid #ddd;
+    		background: url(//gtms01.alicdn.com/tps/i1/T1kYdJFBt7XXcn1fLj-180-20.png) no-repeat 15px 10px;
+    		background-image: -webkit-image-set(url(//gtms01.alicdn.com/tps/i1/T1kYdJFBt7XXcn1fLj-180-20.png) 1x,url(//gtms01.alicdn.com/tps/i1/T1_IdHFphuXXadx0PM-360-40.png) 2x);
+			background-repeat: no-repeat;
+			background-position: 15px 10px;
+			margin-top: 28px;
+			float: left;
+		}
+		.top .nav{
+			height:95px;
+			line-height: 95px;
+			float:right;
+		}
+		.top .nav ul{			
+			display: block;
+			float: right;
+		}
+		.top .nav ul li{
+			float:left;
+			width:120px;
+			height:95px;
+			border:solid #eee;
+			text-align: center;
+			border-width: 0px 1px 0px 1px;
+			margin-left:-1px;
+		}
+		.top .nav ul li.active{
+			background: #f3f3f3;
+		}
+		.top .nav ul li a{
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			color:#8b8c90;
+			font-size:16px;
+		}
+		.top .nav ul li a:hover{
+			background: #f3f3f3;
+			color:#1E3DB7;
+		}
+
+		.slider{
+			background-color: pink;
+			width:100%;
+			height: 300px;
+		}
+		.slider .wrap{
+			position: relative;
+			width:100%;
+			height: 300px;
+		}
+		.slider .wrap .image-list{
+			height: 300px;
+			/*overflow: hidden;*/
+		}
+		.slider .wrap .image-list li{
+			width:100%;
+			height: 300px;
+			position: absolute;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			transition:all 2s;
+			-moz-transition:all 2s; /* Firefox 4 */
+			-webkit-transition:all 2s; /* Safari and Chrome */
+			-o-transition:all 2s; /* Opera */
+			opacity: 0;
+		}
+		.slider .wrap .image-list li.active{
+			opacity: 1;
+		}
+		.slider .wrap .image-list li a{
+			display: block;
+			width:100%;
+			height: 300px;
+		}
+		.slider .wrap .list-nav{
+			position: absolute;
+			bottom: 10px;
+			left:50%;
+			margin-left:-50px;
+			z-index: 999;
+		}
+		.slider .wrap .list-nav ul{
+			display: block;
+			width:100%;
+		}
+		.slider .wrap .list-nav li{
+			float:left;
+			width:11px;
+			height: 11px;
+			line-height: 11px;
+			text-align: center;
+			border-radius: 50%;
+			display: block;
+			margin:0px 5px;
+			background-color: #fff;
+		}
+		.slider .wrap .list-nav li.active{
+			background-color: #B7D21D;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="top">
+		<div class="wrap">
+			<div class="logo">
+				<a href="#" title="阿里安全"></a>
+			</div>
+			<div class="slogan"></div>
+			<div class="nav">
+				<ul>
+					<li class="active"><a href="#">首页</a></li>
+					<li><a href="#">安心淘</a></li>
+					<li><a href="#">安全学堂</a></li>
+					<li><a href="#">安全联盟</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="slider">
+		<div class="wrap">
+			<ul class="image-list">
+				<li class="active" style="background-image:url(https://img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png)"><a href="#"></a></li>
+				<li style="background-image:url(https://img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg)"><a href="#"></a></li>
+				<li style="background-image:url(https://img.alicdn.com/tps/i3/TB1FQSeFVXXXXXvaXXXqyNFLXXX-1600-300.png)"><a href="#"></a></li>
+				<li style="background-image:url(https://img.alicdn.com/tps/i1/T1iqVIFtXzXXb1upjX.jpg)"><a href="#"></a></li>
+			</ul>
+			<!-- <ul class="image-list">
+				<li class="active"><a href="#"><img src="https://img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png" alt="" /></a></li>
+				<li><a href="#"><img src="https://img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg" alt="" /></a></li>
+				<li><a href="#"><img src="https://img.alicdn.com/tps/i3/TB1FQSeFVXXXXXvaXXXqyNFLXXX-1600-300.png" alt="" /></a></li>
+				<li><a href="#"><img src="https://img.alicdn.com/tps/i1/T1iqVIFtXzXXb1upjX.jpg" alt="" /></a></li>
+			</ul>
+			 -->
+			<div class="list-nav">
+				<ul class="list-nav-rotary">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
