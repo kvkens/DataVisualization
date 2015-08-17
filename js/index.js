@@ -14,7 +14,7 @@
 		page : {
 			changTitle : function(title){
 				document.title = title;
-				$(".navgater label").html("用户体验监控 &gt;"+title);
+				$(".navgater label").html("用户体验监控 &gt; "+title);
 			},
 			getQueryString : function(name){
 			     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
