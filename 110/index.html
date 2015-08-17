@@ -95,7 +95,7 @@
 		}
 
 		.slider{
-			background-color: pink;
+			/*background-color: pink;*/
 			width:100%;
 			height: 300px;
 		}
@@ -120,9 +120,11 @@
 			-webkit-transition:all 2s; /* Safari and Chrome */
 			-o-transition:all 2s; /* Opera */
 			opacity: 0;
+			z-index:1;
 		}
 		.slider .wrap .image-list li.active{
 			opacity: 1;
+			z-index:2;
 		}
 		.slider .wrap .image-list li a{
 			display: block;
@@ -154,6 +156,47 @@
 		.slider .wrap .list-nav li.active{
 			background-color: #B7D21D;
 		}
+		.news{
+			width:990px;
+			margin: 0 auto;
+			background-color: pink;
+		}
+		.news .left{
+			background-color: red;
+			width:700px;
+			float: left;
+
+		}
+		.news .right{
+			
+			width:290px;
+			float: right;
+		}
+		.news .right .safe{
+			border: 1px solid #CCC;
+			background-color: #FAFAFA;
+		}
+		.news .right .safe .tool{
+			
+		}
+		.news .right .safe .tool .tool-top{
+			height: 56px;
+			line-height: 56px;
+		}
+		.news .right .safe .tool .tool-top p{
+			float: left;
+			font-size: 16px;
+			margin-left:20px;
+		}
+		.news .right .safe .tool .tool-top a{
+			float: right;
+			margin-right:10px;
+		}
+		.news .right .safe .tool dl{
+			float: left;
+			margin:5px;
+			text-align: center;
+		}
 
 	</style>
 </head>
@@ -178,7 +221,7 @@
 		<div class="wrap">
 			<ul class="image-list">
 				<li class="active" style="background-image:url(https://img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png)"><a href="#"></a></li>
-				<li style="background-image:url(https://img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg)"><a href="#"></a></li>
+				<li style="background-image:url(https://img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg)"><a href="##"></a></li>
 				<li style="background-image:url(https://img.alicdn.com/tps/i3/TB1FQSeFVXXXXXvaXXXqyNFLXXX-1600-300.png)"><a href="#"></a></li>
 				<li style="background-image:url(https://img.alicdn.com/tps/i1/T1iqVIFtXzXXb1upjX.jpg)"><a href="#"></a></li>
 			</ul>
@@ -196,6 +239,44 @@
 					<li></li>
 					<li></li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="news">
+		<div class="left">
+			
+		</div>
+		<div class="right">
+			<div class="safe">
+				<div class="tool clearfix">
+					<div class="tool-top clearfix">
+						<p>安全工具[3]</p>
+						<a href="#">更多&gt;</a>
+					</div>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1xMZ8Fb0jXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">手机管理</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1BOPlFX0gXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">密保问题</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1uEs5FeNlXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">数字证书</a></dd>
+					</dl>
+
+				</div>
+				<div class="login">
+					<div class="tool-bottom">
+						<p>操作保护[1]</p>
+						<a href="#">更多&gt;</a>
+					</div>
+					<a href="#">登录保护</a>
+				</div>
+			</div>
+			<div class="jubao">
+				<a href="#">钓鱼网站举报</a>
 			</div>
 		</div>
 	</div>
