@@ -3,159 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>阿里110</title>
-	<style>
-	/* base yui reset.css, repair 20091217*/
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {margin:0;padding:0;border:0;word-wrap:break-word;word-break:break-all;}
-	table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;}
-	table {border-collapse:collapse;}
-	address, caption, cite, code, dfn, strong, th, var {font-style:normal;}
-	h1, h2, h3, h4, h5, h6 {font-size:1em;}
-	input, textarea, select {font-family:inherit;font-weight:inherit;font-size:1em;padding:0;outline:none;}
-	ul, ol {list-style:none;}
-	em {font-style:normal;}
-	/*html {background:#f2f2f2;}*/
-	body {font-size:0.75em;color:#606060;/*background:#f2f2f2;*/font-family:"微软雅黑", Verdana, Tahoma, Arial, Helvetica, "宋体", sans-serif;word-wrap:break-word;word-break:break-all;}
-	a {color:#606060;text-decoration:none;}
-	a:hover {color:#005aa9;}
-	a img, img {border-width:0px;}
-	.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
-	.clearfix {*zoom:1;clear:both;}
-	/* reset end */
-		.top{
-			width:100%;
-			height: 95px;
-			background: url(./images/top_bg.jpg) repeat-x;
-			margin: 0 auto;
-		}
-		.top .wrap{
-			width : 990px;
-			height:95px;
-			margin:0 auto;
-		}
-		.top .logo{
-			width:165px;
-			height:95px;
-			line-height:95px;
-			background: url(//gtms01.alicdn.com/tps/i1/T1V3dIFzNeXXb4HKDg-165-50.png) no-repeat 0px 23px;
-    		background-image: -webkit-image-set(url(//gtms01.alicdn.com/tps/i1/T1V3dIFzNeXXb4HKDg-165-50.png) 1x,url(//gtms01.alicdn.com/tps/i1/T1qlFHFqldXXafBK7F-330-100.png) 2x);
-			background-repeat: no-repeat;
-			background-position: 0px 23px;
-			float:left;
-
-		}
-		.top .logo a{
-			width:165px;
-			height:95px;
-			line-height:95px;
-			display: block;
-		}
-		.top .slogan{
-			width:211px;
-			height:36px;
-			line-height:36px;
-			border-left: 1px solid #ddd;
-    		background: url(//gtms01.alicdn.com/tps/i1/T1kYdJFBt7XXcn1fLj-180-20.png) no-repeat 15px 10px;
-    		background-image: -webkit-image-set(url(//gtms01.alicdn.com/tps/i1/T1kYdJFBt7XXcn1fLj-180-20.png) 1x,url(//gtms01.alicdn.com/tps/i1/T1_IdHFphuXXadx0PM-360-40.png) 2x);
-			background-repeat: no-repeat;
-			background-position: 15px 10px;
-			margin-top: 28px;
-			float: left;
-		}
-		.top .nav{
-			height:95px;
-			line-height: 95px;
-			float:right;
-		}
-		.top .nav ul{			
-			display: block;
-			float: right;
-		}
-		.top .nav ul li{
-			float:left;
-			width:120px;
-			height:95px;
-			border:solid #eee;
-			text-align: center;
-			border-width: 0px 1px 0px 1px;
-			margin-left:-1px;
-		}
-		.top .nav ul li.active{
-			background: #f3f3f3;
-		}
-		.top .nav ul li a{
-			width: 100%;
-			height: 100%;
-			display: inline-block;
-			color:#8b8c90;
-			font-size:16px;
-		}
-		.top .nav ul li a:hover{
-			background: #f3f3f3;
-			color:#1E3DB7;
-		}
-
-		.slider{
-			background-color: pink;
-			width:100%;
-			height: 300px;
-		}
-		.slider .wrap{
-			position: relative;
-			width:100%;
-			height: 300px;
-		}
-		.slider .wrap .image-list{
-			height: 300px;
-			/*overflow: hidden;*/
-		}
-		.slider .wrap .image-list li{
-			width:100%;
-			height: 300px;
-			position: absolute;
-			background-repeat: no-repeat;
-			background-position: center;
-
-			transition:all 2s;
-			-moz-transition:all 2s; /* Firefox 4 */
-			-webkit-transition:all 2s; /* Safari and Chrome */
-			-o-transition:all 2s; /* Opera */
-			opacity: 0;
-		}
-		.slider .wrap .image-list li.active{
-			opacity: 1;
-		}
-		.slider .wrap .image-list li a{
-			display: block;
-			width:100%;
-			height: 300px;
-		}
-		.slider .wrap .list-nav{
-			position: absolute;
-			bottom: 10px;
-			left:50%;
-			margin-left:-50px;
-			z-index: 999;
-		}
-		.slider .wrap .list-nav ul{
-			display: block;
-			width:100%;
-		}
-		.slider .wrap .list-nav li{
-			float:left;
-			width:11px;
-			height: 11px;
-			line-height: 11px;
-			text-align: center;
-			border-radius: 50%;
-			display: block;
-			margin:0px 5px;
-			background-color: #fff;
-		}
-		.slider .wrap .list-nav li.active{
-			background-color: #B7D21D;
-		}
-
-	</style>
+	<link rel="shortcut icon" href="//gtms01.alicdn.com/tps/i1/T1HyXsFARgXXaSQP_X-16-16.png" type="image/x-icon">
+	<link rel="stylesheet" href="./css/reset.css" />
+	<link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
 	<div class="top">
@@ -177,10 +27,10 @@
 	<div class="slider">
 		<div class="wrap">
 			<ul class="image-list">
-				<li class="active" style="background-image:url(https://img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png)"><a href="#"></a></li>
-				<li style="background-image:url(https://img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg)"><a href="#"></a></li>
-				<li style="background-image:url(https://img.alicdn.com/tps/i3/TB1FQSeFVXXXXXvaXXXqyNFLXXX-1600-300.png)"><a href="#"></a></li>
-				<li style="background-image:url(https://img.alicdn.com/tps/i1/T1iqVIFtXzXXb1upjX.jpg)"><a href="#"></a></li>
+				<li class="active" style="background-image:url(//img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png)"><a href="#"></a></li>
+				<li style="background-image:url(//img.alicdn.com/tps/i1/TB1PNvEHVXXXXcqXXXXSutbFXXX.jpg)"><a href="##"></a></li>
+				<li style="background-image:url(//img.alicdn.com/tps/i3/TB1FQSeFVXXXXXvaXXXqyNFLXXX-1600-300.png)"><a href="#"></a></li>
+				<li style="background-image:url(//img.alicdn.com/tps/i1/T1iqVIFtXzXXb1upjX.jpg)"><a href="#"></a></li>
 			</ul>
 			<!-- <ul class="image-list">
 				<li class="active"><a href="#"><img src="https://img.alicdn.com/tps/i4/TB1abfMHVXXXXcgXFXXwu0bFXXX.png" alt="" /></a></li>
@@ -198,6 +48,90 @@
 				</ul>
 			</div>
 		</div>
+	</div>
+	<div class="news clearfix">
+		<div class="left">
+			<div class="notice-top">
+				<div class="notice-left">
+					<div class="notice-title clearfix">
+						<p>最新公告</p>
+						<a href="#">更多</a>
+					</div>
+					<div class="notice-body">
+						<ul>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]关于仿真枪规范展示的通知</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]禁用领导人名义进行广告宣传</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[资讯]正品货源 请看这边</span><span class="time">15.08.18</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="notice-right">
+					<div class="notice-title clearfix">
+						<p>质量报告</p>
+						<a href="#">更多</a>
+					</div>
+					<div class="notice-body">
+						<ul>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]关于仿真枪规范展示的通知</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]禁用领导人名义进行广告宣传</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[公告]阿里钱盾携手聚安全共建移动安全生态圈</span><span class="time">15.08.18</span></a></li>
+							<li><a href="#"><span class="title">[资讯]正品货源 请看这边</span><span class="time">15.08.18</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="notice-bottom">
+				456
+			</div>
+			
+		</div>
+		<div class="right">
+			<div class="safe">
+				<div class="tool clearfix">
+					<div class="tool-top clearfix">
+						<p>安全工具[3]</p>
+						<a href="#">更多&gt;</a>
+					</div>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1xMZ8Fb0jXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">手机管理</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1BOPlFX0gXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">密保问题</a></dd>
+					</dl>
+					<dl>
+						<dt><img src="https://gtms01.alicdn.com/tps/i1/T1uEs5FeNlXXcC9mPe-40-40.jpg" alt="" /></dt>
+						<dd><a href="#">数字证书</a></dd>
+					</dl>
+
+				</div>
+				<div class="login clearfix">
+					<div class="tool-bottom clearfix">
+						<p>操作保护[1]</p>
+						<a href="#">更多&gt;</a>
+					</div>
+					<div class="help">
+						<a href="#">登录保护</a>	
+					</div>
+					
+				</div>
+			</div>
+			<div class="jubao">
+				<a href="#">钓鱼网站举报</a>
+			</div>
+		</div>
+	</div>
+	<div class="union">
+		123
+	</div>
+	<div class="copyright">
+		<span> 2014 阿里巴巴集团版权所有</span> 
 	</div>
 </body>
 </html>
