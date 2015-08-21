@@ -237,18 +237,29 @@
 .news .right .jubao {
 	width: 238px;
 	height: 50px;
-	background-color: #46b4e6;
+	/*background-color: #46b4e6;*/
+	
 	margin-top: 8px;
 	text-align: center;
 	line-height: 50px;
 }
 .news .right .jubao a {
-	width: 238px;
-	height: 50px;
+	width: 236px;
+	height: 48px;
+	border:1px solid #46b4e6;
 	font-size: 16px;
-	color: #FFF;
+	color: #000;
 	display: block;
 }
+.news .right .jubao a:hover {
+	background-color: #46b4e6;
+	color: #FFF;
+	display: block;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
 .copyright{
 	background-color: #f3f3f3;
 	height: 50px;
