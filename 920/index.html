@@ -64,6 +64,73 @@
 				background-color: #ffeb8b;
 				height: 420px;
 			}
+			.czsp .card-wrap{
+				width:942px;
+				height: auto;
+				margin:0 auto;
+				overflow: hidden;
+			}
+			.czsp .timeline{
+				overflow: hidden;
+			}
+			.czsp .timeline ul{
+				margin-top:10px;
+			}
+			.czsp .timeline li{
+				float: left;
+				width:235.25px;
+				background-color: #e89302;
+				height: 21px;
+				line-height: 21px;
+				text-align: center;
+				color:#FFF;
+				cursor: pointer;
+			}
+			.czsp .timeline li.active{
+				background-color: #FF0000;
+			}
+			.czsp .card{
+				margin-top:22px;
+			}
+			.czsp .card-main{
+				width:	895px;
+				height: 342px;
+				float:left;
+				overflow: hidden;
+			}
+			.czsp .card-main ul{
+				width:1216px;
+				height: 342px;
+				position: relative;
+				left:0px;
+			}
+			.czsp .card-main li{
+				float: left;
+				width:286px;
+				height: 342px;
+				background-color: #FFF;
+				margin-right:18px;
+				position: relative;
+			}
+			.czsp .card-arrow{
+				float: right;
+				width:42px;
+				height: 342px;
+				position: relative;
+				background: url(images/arrow.png) #fffde2 no-repeat center;
+				cursor: pointer;
+			}
+			.czsp .countdown{
+				right:8px;
+				top:8px;
+				position: absolute;
+			}
+			.czsp .countdown strong{
+				font-weight: normal;
+				background-color: #e89302;
+				color: #FFF;
+				margin:0px 2px;
+			}
 		</style>
 	</head>
 	<body>
@@ -84,14 +151,32 @@
 						<li>9月21日闪拍</li>
 					</ul>
 					<div class="czsp-main">
-						<div class="timeline">
-							<ul>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
+						<div class="card-wrap">
+							<div class="timeline">
+								<ul>
+									<li class="active">9:00</li>
+									<li>14:00</li>
+									<li>21:00</li>
+									<li>0:00</li>
+								</ul>
+							</div>
+							<div class="card clearfix">
+								<div class="card-main">
+									<ul>
+										<li>
+											<div class="countdown">剩余时间：<strong>00</strong>时<strong>00</strong>分<strong>00</strong>秒</div>
+										</li>
+										<li>2</li>
+										<li>3</li>
+										<li>4</li>
+									</ul>
+								</div>
+								<div class="card-arrow">
+									
+								</div>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 				
