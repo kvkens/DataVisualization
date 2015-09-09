@@ -18,23 +18,26 @@
 				height: auto;
 				margin:0 auto;
 			}
-			.czsp{
+			.czsp,.xsqg{
 				width:1000px;
 				height: 556px;
 				background-color: #ff7500;
 			}
-			.czsp .czsp-title{
+			.czsp .czsp-title,.xsqg .xsqg-title{
 				width:1000px;
 				height: 91px;
 				overflow: hidden;
 				zoom:1;
 			}
-			.czsp .czsp-img{
+			.czsp .czsp-img,.xsqg .xsqg-img{
 				background: url(images/czsp.png) no-repeat center top;
 				width:321px;
 				height: 64px;
 				margin:13px auto;
 				-webkit-animation: loader 3.5s;
+			}
+			.xsqg .xsqg-img{
+				background: url(images/xsqg.png) no-repeat center top;
 			}
 			.czsp .czsp-wrap{
 				width:983px;
@@ -187,7 +190,13 @@
 				background: url(images/btn-buy.png) no-repeat center;
 				text-indent: -9999em;
 			}
-			
+			.xsqg{
+				margin-top:10px;
+			}
+			.xsqg .xsqg-tab{
+				width:1000px;
+				height: 106px;
+			}
 		</style>
 	</head>
 	<body>
@@ -195,6 +204,7 @@
 			
 		</div>
 		<div class="wrap">
+			<!--超值秒杀 Start-->
 			<div class="czsp">
 				<div class="czsp-title">
 					<div class="czsp-img">
@@ -268,11 +278,23 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<!--超值秒杀 End-->
+			<!--限时抢购 Start-->
+			<div class="xsqg">
+				<div class="xsqg-title">
+					<div class="xsqg-img">
 						
 					</div>
 				</div>
-				
+				<div class="xsqg-tab">
+					ssd		
+				</div>
 			</div>
+			<!--限时抢购 End-->
+			
 		</div>
 	</body>
 </html>
