@@ -34,6 +34,7 @@
 				width:321px;
 				height: 64px;
 				margin:13px auto;
+				-webkit-animation: loader 3.5s;
 			}
 			.czsp .czsp-wrap{
 				width:983px;
@@ -135,6 +136,21 @@
 				width: 236px;
     			margin: 48px auto 0px;
 			}
+			@-webkit-keyframes loader{
+				0%{
+					transform: rotate(0deg);
+					margin-left: 0px;
+				}
+				50%{
+					transform: rotate(360deg);
+					margin-left: 680px;
+				}
+				100%{
+					transform: rotate(0deg);
+					margin-left: 339px;
+				}
+				
+			}
 			.czsp .p-img img{
 				width:100%;
 			}
@@ -171,6 +187,7 @@
 				background: url(images/btn-buy.png) no-repeat center;
 				text-indent: -9999em;
 			}
+			
 		</style>
 	</head>
 	<body>
