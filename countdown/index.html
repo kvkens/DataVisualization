@@ -3,34 +3,60 @@
 	<head>
 		<meta charset="utf-8">
 		<title>倒计时</title>
-		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://cdn09.ehaier.com/v5/js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript">
-			var countDownDom = $(".J_countDown");
+			
 			$(function(){
-				getRTime();//满足倒计时条件
+				secKill(["1443580200","1443580800","1443582000"],function(){
+					console.info("开始秒杀");
+				});
 			});
-			function getRTime(){
-		        var EndTime= new Date(1443585600*1000); //截止时间
-		        var NowTime = new Date();
-		        var t =EndTime.getTime() - NowTime.getTime();
 
-		        var d=Math.floor(t/1000/60/60/24);
-		        var h=Math.floor(t/1000/60/60%24);
-		        var m=Math.floor(t/1000/60%60);
-		        var s=Math.floor(t/1000%60);
-				var sec = parseInt(t/1000);
-		        console.log(sec);
-		        
-		        if(sec<=0){
-		        	console.log("调用把！！！！！！！！！！！！！！！！！！！！！");
-		        	$(".J_countDown").html(0 + "时"+0 + "分"+0 + "秒");
-		        	return false;
-		        }else{
-		        	$(".J_countDown").html(h + "时"+m + "分"+s + "秒");
-		        }
-		        
-		        setTimeout(arguments.callee, 1000);
-		    }
+			/*秒杀操作*/
+			function secKill(_timepoint,_callback){
+				var countDownDom = $(".J_countDown");
+				var nowTime = parseInt(new Date().getTime()/1000);
+				var nextPoint = 0;
+				for (var i = 0; i < _timepoint.length; i++) {
+					var num = parseInt(_timepoint[i]);
+					console.info(num);
+					if(nowTime < num){
+						nextPoint = num;
+						break;
+					}else{
+
+					}
+				};
+				console.log("next point:" + nextPoint);
+				console.log("curr:"+nowTime);
+				//if(nextPoint==0){console.error("没有秒杀时间了");return;}
+				_executeCountDown();
+				function _executeCountDown(){
+			        var EndTime= new Date(nextPoint*1000); //截止时间
+			        var NowTime = new Date();
+			        var t =EndTime.getTime() - NowTime.getTime();
+
+			        var d=Math.floor(t/1000/60/60/24);
+			        var h=Math.floor(t/1000/60/60%24);
+			        var m=Math.floor(t/1000/60%60);
+			        var s=Math.floor(t/1000%60);
+					var sec = parseInt(t/1000);
+			        console.log(sec);
+			        
+			        if(sec <= 0){
+			        	console.log("调用吧函数！！！！！！！！！！！！！！！！！！！！！");
+			        	_callback&&_callback();
+			        	countDownDom.html(0 + "时"+0 + "分"+0 + "秒");
+			        	return false;
+			        }else{
+			        	countDownDom.html(h + "时"+m + "分"+s + "秒");
+			        }
+			        
+			        setTimeout(arguments.callee, 1000);
+			    }
+
+			}
+			
 		    
 		</script>
 	</head>
