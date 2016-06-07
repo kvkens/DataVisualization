@@ -1,7 +1,7 @@
 {
-  "name": "fed",
+  "name": "websitedemo",
   "version": "1.0.0",
-  "description": "FED means front-end documents.",
+  "description": "css",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

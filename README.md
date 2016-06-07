@@ -1,5 +1,15 @@
-# eHaierDataVisualization
-前端HTML框架原型
-HTML5+CSS3+JS
+# 前端布局类展示
 
-> PJAX
+### 静态页面展示
+1. [海尔商城系统可视化用户体验监控](http://demo.imyy.org)
+
+> 该项目目前在内部监控平台使用
+
+2. [海尔商城特卖场](http://demo.imyy.org/920)
+
+> 双十一特卖场
+
+3. [阿里110](http://demo.imyy.org/110)
+
+> 纯友情编写 :)
+

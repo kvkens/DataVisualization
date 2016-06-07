@@ -1,12 +1,10 @@
 /**
- * @author: u9648u6653u52c7@gmail.com
- * @date: 2015-06-25
- * @description: FES Build 
- *
+ * @author: Kvkens(kvkens@qq.com)
+ * @date: 2016-06-07 14:51:04
+ * @description:FE
  */
 
-var 
-	gulp    = require('gulp'),
+var gulp    = require('gulp'),
 	connect = require('gulp-connect');
 
 gulp.task('server', function() {
