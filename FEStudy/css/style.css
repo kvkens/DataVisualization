@@ -34,9 +34,10 @@
 
 .banner{
 	height: 570px;
-	width:1500px;
-	margin: 0 auto;
+	width:100%;
+	overflow: hidden;
 	border-bottom: 4px solid #f34949;
+	text-align: center;
 }
 .banner__bottom__flag{
 	width:155px;
@@ -49,6 +50,7 @@
 	font-weight: 600;
 	color:#ffffff;
 	display: block;
-	padding-top: 20px;
 	text-align: center;
+	height: 75px;
+    line-height: 75px;
 }
